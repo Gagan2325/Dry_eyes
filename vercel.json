@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "builds": [{
-    "src": "BlinkDetection/wsgi.py",
-    "use": "@vercel/python",
-    "config": {
-      "pythonVersion": "3.9"
+  "builds": [
+    {
+      "src": "manage.py",
+      "use": "@vercel/python"
     }
-  }],
-  "routes": [{
-    "src": "/(.*)",
-    "dest": "BlinkDetection/wsgi.py"
-  }]
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "manage.py"
+    }
+  ]
 }
