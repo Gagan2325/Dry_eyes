@@ -1,14 +1,14 @@
 {
     "version": 2,
     "builds": [
-        {"src":"EYE_Blink_Detection-main/wsgi.py",
+        {"src":"BlinkDetection/wsgi.py",
         "use":"@vercel/python",
         "config":{"runtime":"python3.9"}}
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "EYE_Blink_Detection-main/wsgi.py"
+        "dest": "BlinkDetection/wsgi.py"
       }
     ]
   }
